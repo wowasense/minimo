@@ -5,7 +5,7 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
-	
+
 }
 
 // ≥992px
@@ -16,6 +16,33 @@
 // ≥768px
 @include media-breakpoint-down(sm) {
 
+	html{
+		font-size: 8px;
+	}
+
+	.header{
+		padding-top: 2em;
+		.navigation{
+			.toggler{
+				margin-top: 3px;
+				display: block;
+				background: url("../img/menu-btn.png") no-repeat;
+				border: none;
+				width: (197px / 5);
+				height: (118px / 5);
+				background-size: contain;
+			}
+			.nav-list, .nav-item{
+				display: none;
+			}
+		}
+	}
+
+	.footer{
+		.social{
+			margin-top: 3rem;
+		}
+	}
 }
 
 // ≥576px
@@ -43,5 +70,5 @@
 
 // ≤1200px
 @include media-breakpoint-up(xl) {
-	
+
 }
